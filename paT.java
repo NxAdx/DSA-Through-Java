@@ -155,4 +155,23 @@ class paT {
             System.out.println();
         }
     }
+      static void pat9(int n) {
+// *
+// **
+// ***
+// ****
+// *****
+// ****
+// ***
+// **
+// *
+
+        for (int row = 1; row <= n * 2; row++) {
+            int till = row > n ? n * 2 - row : row;
+            for (int col = 1; col <= till; col++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 }
