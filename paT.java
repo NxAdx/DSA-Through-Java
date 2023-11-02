@@ -7,7 +7,7 @@ class paT {
         // pat5(5);
         // pat6(5);
         // pat7(5);
-        pat8(5);
+        // pat8(5);
     }
 
     static void pat1(int n) {
@@ -59,11 +59,11 @@ class paT {
     static void pat4(int n) {
 
         for (int row = 1; row <= n; row++) {
-            // *
-            // **
-            // ***
-            // ****
-            // *****
+           //     *
+           //    **
+           //   ***
+           //  ****
+           // *****
             for (int sp = 1; sp <= n - row; sp++) {
                 System.out.print(" ");
             }
@@ -77,10 +77,10 @@ class paT {
 
     static void pat5(int n) {
         // *****
-        // ****
-        // ***
-        // **
-        // *
+        //  ****
+        //   ***
+        //    **
+        //     *
 
         for (int row = 1; row <= n; row++) {
 
@@ -96,15 +96,16 @@ class paT {
     }
 
     static void pat6(int n) {
-        // *
-        // **
-        // ***
-        // ****
-        // *****
-        // ****
-        // ***
-        // **
-        // *
+//     *
+//    **
+//   ***
+//  ****
+// *****
+//  ****
+//   ***
+//    **
+//     *
+     
         for (int row = 1; row <= n * 2; row++) {
             int tillthis = row > n ? n * 2 - row : row;
             int space = n - tillthis;
@@ -121,10 +122,10 @@ class paT {
     }
 
     static void pat7(int n) {
-        // *
-        // * *
-        // * * *
-        // * * * *
+        //     *
+        //    * *
+        //   * * *
+        //  * * * *
         // * * * * *
         for (int row = 1; row <= n; row++) {
             for (int sp = 1; sp <= n - row; sp++) {
@@ -139,11 +140,11 @@ class paT {
     }
 
     static void pat8(int n) {
-        // * * * * *
-        // * * * *
-        // * * *
-        // * *
-        // *
+        //  * * * * *
+        //   * * * *
+        //    * * *
+        //     * *
+        //      *
         for (int row = 1; row <= n; row++) {
             for (int sp = 1; sp <= row - 1; sp++) {
                 System.out.print(" ");
