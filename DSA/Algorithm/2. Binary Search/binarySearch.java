@@ -1,24 +1,25 @@
-package DSA;
 import java.util.Scanner;
 
-public class linearSearch {
+public class binarySearch {
     public static int searcH(int ar[], int tg, int len){
-        for(int i=0;i<len;i++){
-            if(ar[i]==tg){
-                return i;
+        int left =0, right = len -1;
+        while(left<=right){
+            int mid = left + (right - left) / 2;
+            if(ar[mid]==tg){
+                return mid;
+            }
+            if(ar[mid]<tg){
+                left = mid + 1;
+            }else{
+                right = mid -1;
             }
         }
         return -1;
     }
     public static void main(String arg[]){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the length: ");
-        int length = sc.nextInt();
-        int ar[] = new int[length];
-        System.out.println("Enter the values: ");
-        for(int i=0;i<length;i++){
-            ar[i] = sc.nextInt();
-        }
+        int ar[] = {2,6,7,11,77,100};
+        int length = ar.length;
         System.out.println("Enter the target: ");
         int target = sc.nextInt();
         int result = searcH(ar,target,length);
